@@ -36,11 +36,13 @@ Start from a **fresh copy of the starter template for your own exam group**, in 
 
 Describe **two or three important problems** in your original code. For each, explain what was wrong, which class or method you changed in the new project, and why the corrected approach works.
 
-**Problem and correction 1: Only had one dto in my exam insteaad of 2 different to handle the requst and the response.Also didnt have the requirements needed to enter. such as between 2-60, positive ehole numbers and more**  
+**Problem and correction 1: Only had one dto in my exam instead of 2 different to handle the request and the response.Also didnt have the requirements needed to enter. such as between 2-60, positive ehole numbers and more**  
 **also tried to get and set the  room name,type and id in the main exam**
 **I corrected this by using 2 seperate dtos for request and response which handles the requirements needed to enter the details. used not null, not blank and others to make sure the requirements are met opposed to when i didnt have anything for teh requirements**
 
 **Problem and correction 2:**  
+**Didnt have an exception handlers in my exam**
+**added in exceptions for the main global handler,capacity exceeded and not found. this was definely a big part as i didnt have any exception at all in my exam**
 
 **Problem and correction 3 (optional):**  
 
