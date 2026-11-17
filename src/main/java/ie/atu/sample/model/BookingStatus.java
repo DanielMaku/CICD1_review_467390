@@ -1,4 +1,7 @@
 package ie.atu.sample.model;
 
-public class BookingStatus {
+public enum BookingStatus {
+    ACTIVE,
+    CANCELLED
+
 }
