@@ -26,7 +26,7 @@ Review the code **as submitted in the original examination**. Do not change the 
 **Evidence from the original code:**  
 **no attempt made as i didnt get that far into the assesment**
 
-**Total self-assessed original examination mark: 20/100**
+**Total self-assessed original examination mark: 25/100**
 
 **Checkpoint:** Commit this completed self-assessment as the **first review commit in your new repository**, before you modify or add application code. The lecturer decides the official original examination mark.
 
