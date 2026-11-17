@@ -12,8 +12,8 @@ public class Booking {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String OrganiserName;
-    private int AttendeeCount;
+    private String organiserName;
+    private int attendeeCount;
 
     @Enumerated(EnumType.STRING)
     private BookingStatus status;
