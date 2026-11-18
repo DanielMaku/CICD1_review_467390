@@ -51,28 +51,43 @@ Describe **two or three important problems** in your original code. For each, ex
 Use Swagger UI or another HTTP client. For **at least four meaningful checks**, record the request/input, expected result, actual HTTP status/response, and pass/fail. Include unsuccessful cases; a running application alone is not enough.
 
 **Test 1 — successful booking request:**  
-- Request / input:  
-- Expected:  
-- Actual HTTP status / body:  
-- Pass / fail:  
+- Request / input: exam sheet post request body
+- Expected:  201
+- Actual HTTP status / body:{
+  "id": 1,
+  "roomId": 1,
+  "roomName": "Lab 201",
+  "organiserName": "aoife",
+  "attendeeCount": 18,
+  "status": "ACTIVE"
+  }
+- Pass / fail:  pass
 
 **Test 2 — invalid input or excessive attendee count:**  
 - Request / input:  
-- Expected:  
-- Actual HTTP status / body:  
-- Pass / fail:  
+- Expected:  400
+- Actual HTTP status / body:{
+  "status": 400,
+  "error": "Capacity Exceeded",
+  "message": "attendeeCount 65 exceeds capacity 10 for room Meeting Room 3"
+  }
+- Pass / fail: pass 
 
 **Test 3 — missing booking or room:**  
-- Request / input:  
-- Expected:  
-- Actual HTTP status / body:  
-- Pass / fail:  
+- Request / input:  using id 460
+- Expected:  404
+- Actual HTTP status / body:  {
+  "status": 404,
+  "error": "Not Found",
+  "message": "Booking not found with id 460"
+  }
+- Pass / fail:  pass
 
 **Test 4 — requirement specific to my group:**  
-- Request / input:  
-- Expected:  
-- Actual HTTP status / body:  
-- Pass / fail:  
+- Request / input:  group specific one. group a
+- Expected:  200 for all
+- Actual HTTP status / body: 200 for all. got an empty bracket for last.
+- Pass / fail:  pass
 
 **Group A:** Demonstrate `GET /api/bookings/search?roomName=...` using an exact room name, bookings ordered by attendee count descending, and an empty list for no matches. Add checks if necessary to show all three behaviours.
 
