@@ -95,11 +95,25 @@ Use Swagger UI or another HTTP client. For **at least four meaningful checks**, 
 
 ## 4. Reflection
 
-**What did I understand during the examination but struggle to implement?**  
+**What did I understand during the examination but struggle to implement?** 
+
+During the examination I understood what the app was supposed to do but what i struggled to implement was how to make it properly. i only had one DTO, and i didn't have any checks for between 2-60 positive whole numbers no @NotNull or @NotBlank. I also tried to get and set the room name, type and id inside Booking itself instead of linking the Booking to a real Room with @ManyToOne.
+I also understood that things could go wrong like a booking might not exist or the room might be too small but I had no exception handlers in my exam. so I didn't know how to turn those problems into a proper 404 or 400 response. Also knew i had to use query but didnt know where to start / i couldnt start  it as i needed the other parts to work before i could do it.
 
 **Which Spring Boot, JPA, validation, JPQL or OpenFeign concept became clearer after correcting my code? Give a specific example.**  
+i think validation and dtos became more clear as they couldve been my biggest mistake ib the exam. in the exam I had one that didnt really have anything as useful in it as opposed to now whre i put a min and max value
+@Size(min = 2, max = 60, message = "organiserName must be 2-60 characters")
+i feel like i understand them but never know when and where to start or place them
+
 
 **What will I do differently in my next coding test or API development task?**  
+
+next coding test i need to learn which values work woith each other step by step and try to figure out how they work together.
+i also need to figure out how the linking works and how i can start certain classes/ finding out which ones i need to do first.
+
+I think the things holding me back in this module is practice which i dont get a lot off because of time. i commute to and from college everyday having to wake up as early as 4:45am and getting home as late as 9pm.
+I also have to work on the weekends limiting the time i have to try and attend to all my modules and their assignments as well as the exams which i have to try study for given the limited time i have.
+I will try to do better in this module by trying to spend more time practicing for it.
 
 ## Review lab assessment — 20 marks
 
