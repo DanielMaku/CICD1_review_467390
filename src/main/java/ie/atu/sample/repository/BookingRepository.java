@@ -8,6 +8,6 @@ import org.springframework.data.repository.query.Param;
 import java.util.List;
 
 public interface BookingRepository extends JpaRepository<Booking, Long> {
-    @Query("SELECT b FROM  b JOIN b.room r WHERE r.name = :roomName ORDER BY b.attendeeCount DESC ")
-    List<Booking> findByRoomName(@Param("roomName") String roomName);
+    @Query("SELECT b FROM Booking b JOIN b.room r WHERE r.name = :roomName ORDER BY b.attendeeCount DESC ")
+    List<Booking> findByRoomNameExact(@Param("roomName") String roomName);
 }
